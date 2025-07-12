@@ -8,7 +8,7 @@ const resumeData = {
         linkedin: "https://www.linkedin.com/in/poushali-patra15",
         instagram: "https://www.instagram.com/poushali_patra/"
     },
-    aboutMe: "Motivated and detail-oriented second-year Computer Science undergraduate with a strong academic record and practical experience in data analytics, machine learning, and web development. Proficient in C/C++, and Java, with hands-on exposure to real-world problem-solving through academic and personal projects. Passionate about applying analytical thinking and technical skills to innovative solutions. Actively seeking internship opportunities to gain industry experience and contribute to impactful projects.",
+    aboutMe: "Motivated and detail-oriented third-year Computer Science undergraduate with a strong academic record and practical experience in data analytics, machine learning, and web development. Proficient in C/C++, and Java, with hands-on exposure to real-world problem-solving through academic and personal projects. Passionate about applying analytical thinking and technical skills to innovative solutions. Actively seeking internship opportunities to gain industry experience and contribute to impactful projects.",
     education: [
         {
             degree: "B.Tech in Computer Science",
@@ -40,7 +40,6 @@ const resumeData = {
     internshipsAndCertifications: [
         "Tata Forage Internship - Data Visualization: Empowering Business with Insights - Nov 2024",
         "AWS Academy Cloud Foundation - Feb 2025",
-        "AWS Academy Data Engineering - Feb 2025",
         "Infosys Springboard - NLP for Developers (Jan 2025), Design Thinking, Pragati Cohort Program",
         "GeekCoders - Databricks Certified Data Engineer - Oct 2024",
         "Udemy - Advanced SQL: MySQL for Ecommerce Data Analysis",
