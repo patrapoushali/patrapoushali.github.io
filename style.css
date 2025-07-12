@@ -134,6 +134,10 @@
             margin-right: 10px;
             color: #667eea; /* Accent color */
         }
+        .contact-info i a{
+            color: #ffffff;
+            text-decoration : none;
+        }
 
         .education-item, .project-item {
             margin-bottom: 20px;
