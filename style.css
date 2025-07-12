@@ -1,0 +1,230 @@
+/* General Body Styles */
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1a202c; /* Dark background */
+            color: #e2e8f0; /* Light gray text */
+            line-height: 1.6;
+        }
+
+        /* Container for content */
+        .container {
+            max-width: 960px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #2d3748; /* Slightly lighter dark background for content area */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            border-radius: 12px;
+            box-sizing: border-box; /* Include padding in element's total width and height */
+        }
+
+        /* Header Styles */
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #4a5568; /* Darker border */
+        }
+
+        header h1 {
+            font-size: 3em;
+            color: #edf2f7; /* Lighter color for main heading */
+            margin-bottom: 8px;
+            font-weight: 800;
+        }
+
+        header p {
+            font-size: 1.5em;
+            color: #667eea; /* Accent color */
+            font-weight: 500;
+        }
+
+        /* Button Styles */
+        .button-group {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px 24px;
+            border: 1px solid transparent;
+            font-size: 1em;
+            font-weight: 500;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background-color: #667eea; /* Accent color */
+            color: #ffffff;
+        }
+
+        .btn-primary:hover {
+            background-color: #5a67d8; /* Darker accent */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+        }
+
+        .btn-secondary {
+            background-color: #4a5568; /* Darker background for secondary */
+            border-color: #667eea; /* Accent border */
+            color: #edf2f7; /* Light text */
+        }
+
+        .btn-secondary:hover {
+            background-color: #5a67d8; /* Darker accent on hover */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+        }
+
+        .btn i {
+            margin-right: 8px;
+        }
+
+        /* Section Styles */
+        section {
+            margin-bottom: 40px;
+            padding: 25px;
+            background-color: #2d3748; /* Same as container background for consistency */
+            border-radius: 10px;
+            box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.15);
+        }
+
+        section h2 {
+            font-size: 2.2em;
+            color: #edf2f7; /* Lighter color for section headings */
+            margin-bottom: 15px;
+            border-bottom: 2px solid #667eea; /* Accent border */
+            padding-bottom: 8px;
+            font-weight: 700;
+        }
+
+        section p, section ul {
+            font-size: 1.1em;
+            color: #e2e8f0; /* Light gray text */
+        }
+
+        section ul {
+            list-style: disc;
+            padding-left: 25px;
+            margin-top: 10px;
+        }
+
+        section ul li {
+            margin-bottom: 8px;
+        }
+
+        /* Specific Section Layouts */
+        .contact-info p {
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px;
+            color: #e2e8f0;
+        }
+
+        .contact-info i {
+            margin-right: 10px;
+            color: #667eea; /* Accent color */
+        }
+
+        .education-item, .project-item {
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px dashed #4a5568; /* Darker dashed border */
+        }
+
+        .education-item:last-child, .project-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .education-item h3, .project-item h3 {
+            font-size: 1.4em;
+            color: #edf2f7;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .education-item p, .project-item p {
+            margin-bottom: 3px;
+            color: #cbd5e0; /* Slightly darker light gray */
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .skill-category h3 {
+            font-size: 1.2em;
+            color: #edf2f7;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .container {
+                margin: 10px;
+                padding: 15px;
+            }
+
+            header h1 {
+                font-size: 2.5em;
+            }
+
+            header p {
+                font-size: 1.2em;
+            }
+
+            .btn {
+                padding: 10px 20px;
+                font-size: 0.9em;
+            }
+
+            section h2 {
+                font-size: 1.8em;
+            }
+
+            section p, section ul {
+                font-size: 1em;
+            }
+
+            .education-item h3, .project-item h3 {
+                font-size: 1.2em;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr; /* Single column on smaller screens */
+            }
+        }
+
+        /* Adjusted breakpoint for button stacking */
+        @media (max-width: 640px) { /* Changed from 480px */
+            .button-group {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .btn {
+                width: 100%;
+            }
+
+            section {
+                padding: 15px;
+            }
+
+            section h2 {
+                font-size: 1.5em;
+            }
+        }
