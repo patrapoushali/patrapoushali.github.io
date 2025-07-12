@@ -81,8 +81,12 @@ function populateWebsite() {
 
     // About Me
     document.getElementById('about-me-text').textContent = resumeData.aboutMe;
-    document.getElementById('phone').innerHTML = `<a href="tel:${resumeData.contact.phone}">${resumeData.contact.phone}</a>`;
-    document.getElementById('email').innerHTML = `<a href="mailto:${resumeData.contact.email}">${resumeData.contact.email}</a>`;
+    document.getElementById('phone').href = `tel:${resumeData.contact.phone}`;
+    document.getElementById('phone').textContent = resumeData.contact.phone;
+
+    document.getElementById('email').href = `mailto:${resumeData.contact.email}`;
+    document.getElementById('email').textContent = resumeData.contact.email;
+
 
     // Education
     const educationList = document.getElementById('education-list');
